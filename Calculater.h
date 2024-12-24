@@ -113,7 +113,7 @@ void Calculater::upSorting() {
         for (int j = 0; j < size - 1 - i; j++) {
             // 해당 요소가 다음 요소보다 크면
             if (fiveNum[j] > fiveNum[j + 1]) {
-                // 둘이 자리 바꿀 것(높은숫자를 앞으로)
+                // 둘이 자리 바꿀 것(낮은숫자를 앞으로)
                 swap(fiveNum[j], fiveNum[j + 1]);
             }
         }
@@ -128,7 +128,7 @@ void Calculater::downSorting() {
         for (int j = 0; j < size - 1 - i; j++) {
             // 해당 요소가 다음 요소보다 작으면
             if (fiveNum[j] < fiveNum[j + 1]) {
-                // 둘이 자리 바꿀 것
+                // 둘이 자리 바꿀 것(높은숫자를 앞으로)
                 swap(fiveNum[j], fiveNum[j + 1]);
             }
         }
